@@ -22,7 +22,7 @@ public class Grafo {
 		int cantDePuentesUsados = 0;
 		PriorityQueue<Arista> colaDeAritas = new PriorityQueue<>();
 		List<Integer> islasRecorridas = new LinkedList<>();
-		int islaActual = 1; // Considero 1 la primer isla, es arbitraria la selección del mismo
+		int islaActual = 2; // Considero 1 la primer isla, es arbitraria la selección del mismo
 		Arista aristaActual;
 
 		// Busco aristas del nodo actual
@@ -45,7 +45,6 @@ public class Grafo {
 
 			islaActual = aristaActual.getNodoDestino();
 			islasRecorridas.add(islaActual);
-			colaDeAritas.clear();
 
 		}
 
